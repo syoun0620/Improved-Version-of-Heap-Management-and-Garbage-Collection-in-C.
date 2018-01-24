@@ -92,7 +92,7 @@ void *myalloc(int length){
 }
 
 // The code for myfree behaves the same as free. It should simply mark the specified
-block as unallocated.
+// block as unallocated.
 void  myfree(void *ptr){
 	int *ip = (int*) ptr;
 	*ip = *ip-1;
